@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="color: red">
+      Delete Product
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="productForm" (ngSubmit)="onFormSubmit(productForm.value.id)">
+    <ion-item>
+      <ion-label position="floating">Product Id</ion-label>
+      <ion-input type="number" formControlName="id"></ion-input>
+    </ion-item>
+    <ion-button type="submit" shape="round" color="primary" expand="block" [disabled]="!productForm.valid">Submit</ion-button>
+  </form>
+</ion-content>

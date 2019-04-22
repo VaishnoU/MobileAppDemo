@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="color: blue">Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item *ngFor="let p of products" class="example-item" cdkDrag>
+      <ion-icon name="desktop" slot="start"></ion-icon>
+      {{p.prod_name}}
+      <div class="item-note" slot="end">
+        {{p.prod_price | currency}}
+      </div>
+    </ion-item>
+</ion-content>

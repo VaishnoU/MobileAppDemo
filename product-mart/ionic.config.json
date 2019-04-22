@@ -1,0 +1,7 @@
+{
+  "name": "product-mart",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
